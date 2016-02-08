@@ -22,8 +22,8 @@ Height of multiplication table: 8
   8  16  24  32  40  48  56  64  72  80
 """
 
-Width = (1+int(input("Enter the width of the table. ")))
-Height = int(input("Enter the height of the table. "))
+Width = (1+int(input("Width of multiplication table: ")))
+Height = int(input("Height of multiplication table: "))
 
 NPrint = 1
 LPrint = 1
