@@ -28,5 +28,5 @@ Height = int(input("Enter the height of the table. "))
 LPrint = 1
 
 while LPrint <= Height:
-    print("{0:>3}".format([(LPrint*n) for n in range(1, Width)]))
+    print([(LPrint*n) for n in range(1, Width)])
     LPrint = LPrint + 1
