@@ -21,20 +21,14 @@ Height of multiplication table: 8
   7  14  21  28  35  42  49  56  63  70
   8  16  24  32  40  48  56  64  72  80
 """
-
-Width = (1+int(input("Width of multiplication table: ")))
+import sys
+Width = int(input("Width of multiplication table: "))
 Height = int(input("Height of multiplication table: "))
 
-NPrint = 1
 LPrint = 1
 
-# while LPrint <= Height:
-#   print([(LPrint*n) for n in range(1, Width)])
-#   LPrint = LPrint+1
-    
 while LPrint <= Height:
-    while NPrint <= Width:
-        print("{0:>3}".format(NPrint*LPrint))
-        NPrint = NPrint+1
+    for item in [(LPrint*n) for n in range(1, Width)]:
+        print(("{0:>3}".format(item)), end=" ")
+    print(("{0:>3}".format(LPrint*(Width))))
     LPrint = LPrint+1
-    NPrint = 1
